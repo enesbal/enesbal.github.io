@@ -1,21 +1,22 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<title>Enes Bal</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Enes Bal</title>
+    <link href="nomal.css" rel="stylesheet" type="text/css">
+  </head>
 
-
-<link href="nomal.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-
-<div> 
-  <h1>Enes Bal</h1>
-  
-</div>
-
-
+  <body>
+    <div> 
+      <h1>Enes Bal</h1>
+          <div>
+            <label>Name:</label>
+            <input type="text" ng-model="yourName" placeholder="Enter a name here">
+            <hr>
+            <h1>Hello {{yourName}}!</h1>
+          </div>
+    </div>
 </body>
 </html>
